@@ -21,10 +21,9 @@
 
   // Palette
   --color-brand: #00cec9;
-  --color-accent: #2d3436;
+  --color-accent: #007B78;
   --color-text: #ffffff;
   --color-background: #636e72;
-  --color-call-to-action: #0984e3;
 
   // Spacing
   --spacing-extra-tight: 0.1rem;
@@ -131,6 +130,24 @@ html {
         .icon {
           svg {
             fill: var(--color-brand);
+          }
+        }
+      }
+      &.plain {
+        background-color: transparent;
+        color: var(--color-text);
+        border: none;
+        .icon {
+          svg {
+            fill: var(--color-text);
+          }
+        }
+        &:hover {
+          color: var(--color-brand);
+          .icon {
+            svg {
+              fill: var(--color-brand);
+            }
           }
         }
       }

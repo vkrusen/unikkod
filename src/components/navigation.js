@@ -1,15 +1,32 @@
-import React from "react";
+import React from "react"
+
+const links = [
+  {
+    title: "Tjänster",
+    url: "services",
+  },
+  {
+    title: "Kundcase",
+    url: "cases",
+  },
+  {
+    title: "Aktuellt",
+    url: "news",
+  },
+]
 
 const Navigation = () => {
   return (
     <nav>
       <ul>
-        <li><a href="#">Tjänster</a></li>
-        <li><a href="#">Kundcase</a></li>
-        <li><a href="#">Aktuellt</a></li>
+        {links.map((link, index) => (
+          <li key={index}>
+            <a href={link.url}>{link.title}</a>
+          </li>
+        ))}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

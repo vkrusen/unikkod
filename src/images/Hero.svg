@@ -1,6 +1,6 @@
 <svg width="750" height="497" viewBox="0 0 750 497" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_147_3)">
-<path d="M750.33 -2.71999H0.329987V497.28H750.33V-2.71999Z" fill="#00716E"/>
+<path d="M750.33 -2.71999H0.329987V497.28H750.33V-2.71999Z" fill="#007B78"/>
 <g opacity="0.5">
 <path opacity="0.5" d="M585.12 -1.43997L520.64 63.04" stroke="white" stroke-width="2.1221" stroke-miterlimit="10"/>
 <path opacity="0.5" d="M580.93 -5.62997L516.45 58.85" stroke="white" stroke-width="2.1221" stroke-miterlimit="10"/>
@@ -43,6 +43,48 @@
 <path opacity="0.5" d="M584.34 230.77C568.13 214.56 568.13 188.29 584.34 172.08L755.62 0.800016C771.83 -15.41 798.1 -15.41 814.31 0.800016C830.52 17.01 830.52 43.28 814.31 59.49L643.03 230.77C626.82 246.97 600.55 246.97 584.34 230.77Z" fill="url(#paint4_linear_147_3)"/>
 <path opacity="0.5" d="M581.17 88.32C573.45 80.6 573.45 68.09 581.17 60.38L658.81 -17.26C666.53 -24.98 679.04 -24.98 686.75 -17.26C694.47 -9.53999 694.47 2.97 686.75 10.68L609.11 88.32C601.4 96.03 588.89 96.03 581.17 88.32Z" fill="url(#paint5_linear_147_3)"/>
 <path opacity="0.5" d="M707.58 231.62C699.86 223.9 699.86 211.39 707.58 203.68L785.22 126.04C792.94 118.32 805.45 118.32 813.16 126.04C820.88 133.76 820.88 146.27 813.16 153.98L735.52 231.62C727.8 239.34 715.29 239.34 707.58 231.62Z" fill="url(#paint6_linear_147_3)"/>
+<g opacity="0.49">
+<g opacity="0.49">
+<path opacity="0.49" d="M392.86 118.83V125.97" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M396.43 122.4H389.3" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.49">
+<path opacity="0.49" d="M692.9 357.36V364.49" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M696.47 360.92H689.34" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.49">
+<path opacity="0.49" d="M189.61 292.76V299.89" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M193.18 296.32H186.05" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.49">
+<g opacity="0.49">
+<path opacity="0.49" d="M554.25 442.64V449.77" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M557.81 446.2H550.68" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.49">
+<path opacity="0.49" d="M532.69 442.64V449.77" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M536.25 446.2H529.12" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.49">
+<path opacity="0.49" d="M511.13 442.64V449.77" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M514.69 446.2H507.56" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g opacity="0.49">
+<g opacity="0.49">
+<path opacity="0.49" d="M71.24 123.64V130.77" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M74.8 127.21H67.67" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.49">
+<path opacity="0.49" d="M49.68 123.64V130.77" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M53.25 127.21H46.11" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g opacity="0.49">
+<path opacity="0.49" d="M28.12 123.64V130.77" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.49" d="M31.69 127.21H24.56" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
 </g>
 <defs>
 <linearGradient id="paint0_linear_147_3" x1="80.035" y1="340.113" x2="-140.134" y2="560.282" gradientUnits="userSpaceOnUse">

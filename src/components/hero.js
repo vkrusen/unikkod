@@ -8,7 +8,9 @@ const Hero = () => {
   return (
     <section className="section__hero">
       <div className="section__wrapper">
-        <h1 className="center-align">Headline <span>Unikkod</span></h1>
+        <h1 className="center-align">
+          Headline <span>Unikkod</span>
+        </h1>
         <p className="center-align">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed
           ultrices erat, et dictum odio. Nulla vitae tortor dictum ligula
@@ -18,7 +20,7 @@ const Hero = () => {
           <Button type="primary" icon={ArrowRightMinor}>
             Få kostnadsfri offert
           </Button>
-          <Button type="secondary" icon={ArrowRightMinor}>
+          <Button type="plain" icon={ArrowRightMinor}>
             Visa alla tjänster
           </Button>
         </Stack>
