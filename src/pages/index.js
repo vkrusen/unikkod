@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Hero />
+    <h1 className="text-3xl font-bold underline">Hello world!</h1>
   </Layout>
 )
 
