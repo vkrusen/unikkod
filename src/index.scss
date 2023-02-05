@@ -1,28 +1,41 @@
 :root {
+  // Font family
   --font-family: "Sora";
+
+  // Font weights
   --font-weight-regular: 300;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-  --font-size-h1: 3.4em;
-  --font-size-h2: 2.4em;
-  --font-size-h3: 1.6em;
-  --font-size-h4: 1.4em;
-  --font-size-h5: 1.2em;
-  --font-size-h6: 1em;
-  --font-size-p: 1em;
+
+  // Font sizes
+  --font-size-h1: 2.8rem;
+  --font-size-h2: 2.4rem;
+  --font-size-h3: 1.6rem;
+  --font-size-h4: 1.4rem;
+  --font-size-h5: 1.2rem;
+  --font-size-h6: 1rem;
+  --font-size-p: 1rem;
+
+  // Line height
   --line-height: 1.5;
-  --center-align: center;
-  --color-brand: #00cec9; // 0abde3 or 00cec9
+
+  // Palette
+  --color-brand: #00cec9;
   --color-accent: #2d3436;
   --color-text: #ffffff;
   --color-background: #636e72;
   --color-call-to-action: #0984e3;
+
+  // Spacing
   --spacing-extra-tight: 0.1rem;
   --spacing-tight: 0.2rem;
   --spacing-normal: 0.4rem;
   --spacing-loose: 0.6rem;
   --spacing-extra-loose: 0.8rem;
+
+  // Hero
   --hero-height: 75vh;
+  --center-align: center;
 }
 
 html {
@@ -35,9 +48,12 @@ html {
     h1 {
       font-size: var(--font-size-h1);
       font-weight: var(--font-weight-bold);
-      margin: 1rem 0;
+      margin: var(--spacing-extra-loose) 0;
       &.center-align {
         text-align: var(--center-align);
+      }
+      span {
+        color: var(--color-brand);
       }
     }
     p {
@@ -47,6 +63,32 @@ html {
         text-align: var(--center-align);
       }
     }
+
+    // Navigation
+    nav {
+      position: absolute;
+      width: 100%;
+      ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        li {
+          list-style-type: none;
+          margin: var(--spacing-extra-loose);
+          a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: var(--font-size-h6);
+            font-weight: var(--font-weight-medium);
+            &:hover {
+              color: var(--color-brand);
+            }
+          }
+        }
+      }
+    }
+
+    // Hero component
     .section__hero {
       min-height: var(--hero-height);
       display: flex;
@@ -62,6 +104,8 @@ html {
         max-width: 80%;
       }
     }
+
+    // Button component
     button {
       cursor: pointer;
       font-family: var(--font-family);
@@ -94,6 +138,8 @@ html {
         margin-left: 5px;
       }
     }
+
+    // Icon component
     .icon {
       display: inline-block;
       height: 1.25rem;
@@ -102,6 +148,8 @@ html {
       max-width: 100%;
       margin: auto;
     }
+
+    // Stack component
     .stack {
       display: flex;
       align-items: center;
@@ -134,6 +182,7 @@ html {
   }
 }
 
+// Breakpoints
 $breakpoint-xs: 320px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 1024px;
