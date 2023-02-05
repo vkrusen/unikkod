@@ -1,8 +1,8 @@
 import * as React from "react"
-import Button from "./button"
-import Stack from "./stack"
+import Button from "../button"
+import Stack from "../stack"
 
-import ArrowRightMinor from "../images/Icons/ArrowRightMinor.svg"
+import ArrowRightMinor from "../../images/Icons/ArrowRightMinor.svg"
 
 const Hero = () => {
   return (
