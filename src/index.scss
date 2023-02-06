@@ -80,6 +80,7 @@ html {
       display: flex;
       border-radius: 1.2rem;
       padding: 0.6rem 1.2rem;
+      width: fit-content;
       &.primary {
         background-color: var(--color-brand);
         color: var(--color-text);
@@ -131,37 +132,6 @@ html {
       max-height: 100%;
       max-width: 100%;
       margin: auto;
-    }
-
-    // Stack component
-    .stack {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &.vertical {
-        flex-direction: column;
-      }
-      &.horizontal {
-        flex-direction: row;
-      }
-      .none {
-        margin: 0;
-      }
-      .extraTight {
-        margin: var(--spacing-extra-tight);
-      }
-      .tight {
-        margin: var(--spacing-tight);
-      }
-      .normal {
-        margin: var(--spacing-normal);
-      }
-      .loose {
-        margin: var(--spacing-loose);
-      }
-      .extraLoose {
-        margin: var(--spacing-extra-loose);
-      }
     }
   }
 }

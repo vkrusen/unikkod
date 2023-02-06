@@ -1,8 +1,7 @@
 import * as React from "react"
 import Button from "../button"
-import Stack from "../stack"
 
-import ArrowRightMinor from "../../images/Icons/ArrowRightMinor.svg"
+import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
 import backgroundImage from "../../images/Hero.svg"
 
 const Hero = () => {
@@ -20,14 +19,14 @@ const Hero = () => {
           ultrices erat, et dictum odio. Nulla vitae tortor dictum ligula
           commodo molestie vitae maximus ex.
         </p>
-        <Stack vertical={false} spacing="loose">
+        <div className="flex flex-col md:flex-row justify-center">
           <Button type="primary" icon={ArrowRightMinor}>
             Få kostnadsfri offert
           </Button>
           <Button type="plain" icon={ArrowRightMinor}>
             Visa alla tjänster
           </Button>
-        </Stack>
+        </div>
       </div>
     </section>
   )
