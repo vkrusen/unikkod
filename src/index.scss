@@ -21,7 +21,7 @@
 
   // Palette
   --color-brand: #00cec9;
-  --color-accent: #007B78;
+  --color-accent: #007b78;
   --color-text: #ffffff;
   --color-background: #636e72;
 
@@ -39,28 +39,20 @@
 
 html {
   body {
-    margin: 0;
     font-family: var(--font-family);
     font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-p);
     line-height: var(--line-height);
     h1 {
       font-size: var(--font-size-h1);
       font-weight: var(--font-weight-bold);
       margin: var(--spacing-extra-loose) 0;
-      &.center-align {
-        text-align: var(--center-align);
-      }
-      span {
-        color: var(--color-brand);
-      }
     }
     p {
       font-size: var(--font-size-p);
       font-weight: var(--font-weight-regular);
-      &.center-align {
-        text-align: var(--center-align);
-      }
+    }
+    span {
+      color: var(--color-brand);
     }
 
     // Navigation
@@ -68,39 +60,14 @@ html {
       position: absolute;
       width: 100%;
       ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
         li {
-          list-style-type: none;
           margin: var(--spacing-extra-loose);
           a {
-            text-decoration: none;
-            color: var(--color-text);
-            font-size: var(--font-size-h6);
-            font-weight: var(--font-weight-medium);
             &:hover {
               color: var(--color-brand);
             }
           }
         }
-      }
-    }
-
-    // Hero component
-    .section__hero {
-      min-height: var(--hero-height);
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: url("./images/Hero.svg") no-repeat center bottom;
-      background-size: cover;
-      color: var(--color-text);
-      .section__wrapper {
-        width: 640px;
-        max-width: 80%;
       }
     }
 

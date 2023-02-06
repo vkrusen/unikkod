@@ -17,11 +17,11 @@ const links = [
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="flex items-center justify-center p-4 text-white">
+      <ul className="flex">
         {links.map((link, index) => (
-          <li key={index}>
-            <a href={link.url}>{link.title}</a>
+          <li key={index} className="mr-6">
+            <a href={link.url} className="font-medium">{link.title}</a>
           </li>
         ))}
       </ul>
