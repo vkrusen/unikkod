@@ -10,7 +10,7 @@ const Hero = () => {
       className="bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="container mx-auto py-48 px-8 space-y-6 justify-center max-w-screen-sm ">
+      <div className="container mx-auto py-28 md:py-44 px-8 space-y-6 justify-center max-w-screen-sm ">
         <h1 className="text-white text-5xl font-bold text-center">
           Headline <span>Unikkod</span>
         </h1>
