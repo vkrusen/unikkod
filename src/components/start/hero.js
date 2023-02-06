@@ -4,13 +4,14 @@ import Stack from "../stack"
 
 import ArrowRightMinor from "../../images/Icons/ArrowRightMinor.svg"
 import backgroundImage from "../../images/Hero.svg"
+
 const Hero = () => {
   return (
     <section
       className="bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="container mx-auto py-32 px-8 justify-center max-w-screen-sm space-y-6">
+      <div className="container mx-auto py-48 px-8 space-y-6 justify-center max-w-screen-sm ">
         <h1 className="text-white text-5xl font-bold text-center">
           Headline <span>Unikkod</span>
         </h1>
