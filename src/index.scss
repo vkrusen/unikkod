@@ -1,6 +1,7 @@
 :root {
   // Font family
-  --font-family: "Sora";
+  --font-heading: "Sora";
+  --font-paragraph: "Sora";
 
   // Font weights
   --font-weight-regular: 300;
@@ -9,11 +10,9 @@
 
   // Font sizes
   --font-size-h1: 2.8rem;
-  --font-size-h2: 2.4rem;
-  --font-size-h3: 1.6rem;
-  --font-size-h4: 1.4rem;
-  --font-size-h5: 1.2rem;
-  --font-size-h6: 1rem;
+  --font-size-h2: 1.8rem;
+  --font-size-h3: 1.4rem;
+  --font-size-h4: 1.2rem;
   --font-size-p: 1rem;
 
   // Line height
@@ -22,7 +21,7 @@
   // Palette
   --color-brand: #00cec9;
   --color-accent: #004356;
-  --color-text: #ffffff;
+  --color-text: #000000;
   --color-background: #636e72;
 
   // Spacing
@@ -39,7 +38,7 @@
 
 html {
   body {
-    font-family: var(--font-family);
+    font-family: var(--font-heading);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height);
     h1 {
@@ -47,7 +46,18 @@ html {
       font-weight: var(--font-weight-bold);
       margin: var(--spacing-extra-loose) 0;
     }
+    h2 {
+      font-size: var(--font-size-h2);
+      font-weight: var(--font-weight-bold);
+      margin: var(--spacing-extra-loose) 0;
+    }
+    h3 {
+      font-size: var(--font-size-h3);
+      font-weight: var(--font-weight-bold);
+      margin: var(--spacing-extra-loose) 0;
+    }
     p {
+      font-family: var(--font-paragraph);
       font-size: var(--font-size-p);
       font-weight: var(--font-weight-regular);
     }
@@ -74,7 +84,7 @@ html {
     // Button component
     button {
       cursor: pointer;
-      font-family: var(--font-family);
+      font-family: var(--font-heading);
       font-weight: var(--font-weight-regular);
       font-size: var(--font-size-p);
       display: flex;
@@ -83,40 +93,17 @@ html {
       width: fit-content;
       &.primary {
         background-color: var(--color-brand);
-        color: var(--color-text);
-        border: none;
-        .icon {
-          svg {
-            fill: var(--color-text);
-          }
-        }
       }
       &.secondary {
         background-color: transparent;
         color: var(--color-brand);
         border: 1px solid var(--color-brand);
-        .icon {
-          svg {
-            fill: var(--color-brand);
-          }
-        }
       }
       &.plain {
         background-color: transparent;
-        color: var(--color-text);
         border: none;
-        .icon {
-          svg {
-            fill: var(--color-text);
-          }
-        }
         &:hover {
           color: var(--color-brand);
-          .icon {
-            svg {
-              fill: var(--color-brand);
-            }
-          }
         }
       }
       .icon {

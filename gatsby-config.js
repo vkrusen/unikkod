@@ -45,7 +45,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `sora`,
+          `Sora`,
         ],
         display: 'swap'
       }

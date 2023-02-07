@@ -5,7 +5,7 @@ import Navigation from "./navigation"
 const Layout = ({ children }) => {
   return (
     <div>
-      <meta name="theme-color" content="#007b78" />
+      <meta name="theme-color" content="#004356" />
       <Navigation />
       <main>{children}</main>
       <footer>
