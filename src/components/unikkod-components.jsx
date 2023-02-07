@@ -53,11 +53,12 @@ export function Icon({ path }) {
   )
 }
 
-export function Button({ type, icon, onClick, to, children }) {
+export function Button({ type, icon, iconPlacement = "after", onClick, to, children }) {
   return (
     <button className={type + " mx-auto sm:mx-2"} onClick={onClick}>
+      {icon && iconPlacement === "before" && <Icon path={icon} />}
       {to && <Link to={to}>{children}</Link> || children}
-      {icon && <Icon path={icon} />}
+      {icon && iconPlacement === "after" && <Icon path={icon} />}
     </button>
   )
 }

@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
   // Body
   h1 {
     @apply text-4xl font-bold;
@@ -31,16 +30,35 @@
   }
 
   nav {
-    @apply absolute w-full;
-    ul {
-      li {
-        @apply m-4;
-        a {
-          @apply text-white;
+    @apply absolute w-full h-24 flex items-center justify-center p-4 text-white;
+    .navbar__desktop {
+      @apply hidden md:flex flex-1 items-center container mx-auto;
+      &.left {
+        @apply justify-start;
+      }
+      &.right {
+        @apply justify-end;
+      }
+      ul {
+        @apply flex flex-grow items-center justify-center;
+        li {
+          @apply m-4 mx-4;
+          Link {
+            @apply text-white cursor-pointer font-medium;
+          }
           &:hover {
             @apply text-primary;
           }
         }
+      }
+    }
+    .navbar__mobile {
+      @apply flex md:hidden flex-1 h-full items-center justify-between;
+    }
+    .navbar__mobile-menu {
+      @apply flex md:hidden flex-col space-y-4 py-4 px-3 absolute top-0 left-0 w-full h-fit bg-accent;
+      ul {
+        @apply space-y-2;
       }
     }
   }

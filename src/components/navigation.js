@@ -1,5 +1,8 @@
-import { Link } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
+import { Button } from "./unikkod-components"
+
+import Close from "../images/ArrowUpMinor.svg"
 
 const links = [
   {
@@ -17,21 +20,54 @@ const links = [
 ]
 
 const Navigation = () => {
+  const [menuOpen, setMenuOpen] = React.useState(false)
+
   return (
-    <nav className="flex items-center justify-center p-4 text-white">
-      <ul className="flex">
-        {links.map((link, index) => (
-          <li key={index} className="mx-4">
-            <Link
-              className="cursor-pointer font-medium"
-              to={`/${link.url}`}
-              activeClassName="text-primary"
-            >
-              {link.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <nav>
+      {/* Desktop navigation */}
+      <div className="navbar__desktop">
+        <div className="left">
+          <Link to="/">Logo</Link>
+        </div>
+        <ul>
+          {links.map((link, index) => (
+            <li key={index}>
+              <Link to={`/${link.url}`} activeClassName="text-primary">
+                {link.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="right"></div>
+      </div>
+
+      {/* Mobile navigation */}
+      <div className="navbar__mobile">
+        <div className="left">
+          <Link to="/">Logo</Link>
+        </div>
+        <div className="right">
+          {!menuOpen && (
+            <Button onClick={() => setMenuOpen(!menuOpen)} type="plain">Meny</Button>
+          )}
+        </div>
+      </div>
+
+      {/* Mobile navigation menu */}
+      {menuOpen && (
+        <div className="navbar__mobile-menu">
+          <ul>
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link to={`/${link.url}`} activeClassName="text-primary">
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Button onClick={() => setMenuOpen(!menuOpen)} type="plain" icon={Close} iconPlacement="after">Stäng</Button>
+        </div>
+      )}
     </nav>
   )
 }

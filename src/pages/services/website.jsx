@@ -77,9 +77,9 @@ export default function Website() {
 function StepCard({ step, title, current = false, animate = false, children }) {
   return (
     <div className="flex flex-col gap-4">
-      <div className="p-4 border-2 border-solid border-gray-300 rounded">
+      <div className="p-4 border-2 border-solid border-gray-100 rounded-lg ">
         <div className={`w-100% h-1 rounded mb-4 ${current || animate ? "bg-primary" : "bg-gray-200"} ${animate ? "animate-pulse" : null}`} />
-        <h4 className={`${current || animate ? "text-primary" : "text-gray-400"}`}>Steg {step}</h4>
+        <h4 className={`${current || animate ? "text-primary" : "text-gray-400"} ${animate ? "animate-pulse" : null}`}>Steg {step}</h4>
         <p>{title}</p>
       </div>
       {children}
