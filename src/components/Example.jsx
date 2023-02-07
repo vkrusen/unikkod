@@ -1,5 +1,5 @@
 import * as React from "react"
-import Button from "./Button"
+import Button from "./button"
 
 import ArrowRightMinor from "../images/ArrowRightMinor.svg"
 import CoWorking from "../images/CoWorking.jpg"
