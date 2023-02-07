@@ -3,12 +3,49 @@
 @tailwind utilities;
 
 @layer components {
+
+  // Body
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  p {
+    @apply text-base;
+  }
+  span {
+    @apply text-primary;
+  }
+
+  // Components
   .card {
     @apply grid gap-4;
   }
 
   .container-layout {
     @apply container mx-auto py-14 px-3 md:px-0 grid gap-8;
+  }
+
+  nav {
+    @apply absolute w-full;
+    ul {
+      li {
+        @apply m-4;
+        a {
+          @apply text-white;
+          &:hover {
+            @apply text-primary;
+          }
+        }
+      }
+    }
   }
 
   button {
@@ -32,40 +69,6 @@
 
   .icon {
     @apply inline-block h-5 w-5 max-h-full max-w-full m-auto;
-  }
-
-  nav {
-    @apply absolute w-full;
-    ul {
-      li {
-        @apply m-4;
-        a {
-          @apply text-white;
-          &:hover {
-            @apply text-primary;
-          }
-        }
-      }
-    }
-  }
-
-  h1 {
-    @apply text-4xl font-bold;
-  }
-  h2 {
-    @apply text-3xl font-bold;
-  }
-  h3 {
-    @apply text-2xl font-bold;
-  }
-  h4 {
-    @apply text-xl font-bold;
-  }
-  p {
-    @apply text-base;
-  }
-  span {
-    @apply text-primary;
   }
 }
 

@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 const links = [
@@ -21,21 +22,18 @@ const Navigation = () => {
       <ul className="flex">
         {links.map((link, index) => (
           <li key={index} className="mx-4">
-            <a
+            <Link
               className="cursor-pointer font-medium"
-              onClick={() => navigateTo(`/${link.url}`)}
+              to={`/${link.url}`}
+              activeClassName="text-primary"
             >
               {link.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
     </nav>
   )
-
-  function navigateTo(to) {
-    window.location.href = to
-  }
 }
 
 export default Navigation

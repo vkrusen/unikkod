@@ -60,7 +60,7 @@ export default function Services() {
               <Button
                 type="plain"
                 icon={ArrowRightMinor}
-                onClick={() => navigateTo(`/${service.handle}`)}
+                to={`/${service.handle}`}
               >
                 Läs mer
               </Button>

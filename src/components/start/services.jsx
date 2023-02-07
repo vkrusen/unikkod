@@ -5,6 +5,7 @@ import CoWorking from "../../images/CoWorking.jpg"
 import Ecommerce from "../../images/Ecommerce.jpg"
 import Integration from "../../images/Building.jpg"
 import { Button } from "../unikkod-components"
+import { Link } from "gatsby"
 
 const services = [
   {
@@ -48,7 +49,7 @@ export default function Services() {
               <Button
                 type="plain"
                 icon={ArrowRightMinor}
-                onClick={() => navigateTo(`/services/${service.handle}`)}
+                to={`/services/${service.handle}`}
               >
                 Läs mer
               </Button>

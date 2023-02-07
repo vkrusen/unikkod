@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
 
 import Footer from "./footer"
@@ -52,10 +53,10 @@ export function Icon({ path }) {
   )
 }
 
-export function Button({ type, icon, onClick, children }) {
+export function Button({ type, icon, onClick, to, children }) {
   return (
     <button className={type + " mx-auto sm:mx-2"} onClick={onClick}>
-      {children}
+      {to && <Link to={to}>{children}</Link> || children}
       {icon && <Icon path={icon} />}
     </button>
   )
