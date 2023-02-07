@@ -19,7 +19,7 @@ const Hero = () => {
           ultrices erat, et dictum odio. Nulla vitae tortor dictum ligula
           commodo molestie vitae maximus ex.
         </p>
-        <div className="text-white flex flex-col md:flex-row justify-center">
+        <div className="text-white flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
           <Button type="primary" icon={ArrowRightMinor}>
             Få kostnadsfri offert
           </Button>

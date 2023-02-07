@@ -34,7 +34,7 @@ export default function Example() {
         <h2>Vad kan vi hjälpa dig med?</h2>
         <div className="grid md:grid-cols-3 gap-4">
           {services.map(service => (
-            <div className="flex flex-col py-4 items-center space-y-4">
+            <div className="flex flex-col py-4 space-y-4 text-left items-start">
               <img className="rounded" src={service.image} alt={service.title} />
               <h3>{service.title}</h3>
               <p>{service.description}</p>
