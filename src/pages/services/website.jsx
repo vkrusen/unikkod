@@ -17,7 +17,7 @@ export default function Website() {
         </p>
       </Card>
       <Card>
-        <h2>Hur är upplägget?</h2>
+        <h3>Hur är upplägget?</h3>
         <p>
           Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-4
           veckor från första steget tills att hemsidan är klar.
@@ -47,7 +47,7 @@ export default function Website() {
         </div>
       </Card>
       <Card>
-        <h2>Använder ni WordPress?</h2>
+        <h3>Använder ni WordPress?</h3>
         <p>
           Hos oss är du som väljer. Vi erbjuder att kunna välja mellan ett brett
           urval av Content managements systems (CMS). Bland annat WordPress,
@@ -56,7 +56,7 @@ export default function Website() {
         </p>
       </Card>
       <Card>
-        <h2>Vad kostar det?</h2>
+        <h3>Vad kostar det?</h3>
         <p>
           Vi utgår från en fast prislista. Lorem ipsum dolor, sit amet
           consectetur adipisicing elit. Totam explicabo dolore ex amet odit?
@@ -74,8 +74,6 @@ export default function Website() {
   )
 }
 
-export const Head = () => <Seo title="Tjänster" />
-
 function StepCard({ step, title, current = false, animate = false, children }) {
   return (
     <div className="flex flex-col gap-4">
@@ -88,3 +86,5 @@ function StepCard({ step, title, current = false, animate = false, children }) {
     </div>
   )
 }
+
+export const Head = () => <Seo title="Tjänster" />

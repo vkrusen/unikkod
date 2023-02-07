@@ -1,9 +1,9 @@
 import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
 
-import Footer from "./footer"
 import Navigation from "./navigation"
 import NavigationHero from "./navigationhero"
+import Footer from "./footer"
 
 // Page used to wrap whole page
 export function Page({ children }) {

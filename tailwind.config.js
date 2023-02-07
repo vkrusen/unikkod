@@ -12,7 +12,7 @@ module.exports = {
         accent: "#000000",
       },
       fontFamily: {
-        sans: ["Sora", "sans-serif"],
+        sora: ["Sora", "sans-serif"],
       },
       fontWeight: {
         light: 300,
