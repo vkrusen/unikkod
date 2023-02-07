@@ -1,10 +1,10 @@
 import * as React from "react"
-import Button from "../button"
 
 import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
 import CoWorking from "../../images/CoWorking.jpg"
 import Ecommerce from "../../images/Ecommerce.jpg"
 import Integration from "../../images/Building.jpg"
+import { Button } from "../unikkod-components"
 
 const services = [
   {

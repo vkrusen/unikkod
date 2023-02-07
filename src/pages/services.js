@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Button from "../components/button"
+import { Button } from "../components/unikkod-components"
 
 import ArrowRightMinor from "../images/ArrowRightMinor.svg"
 import CoWorking from "../images/CoWorking.jpg"

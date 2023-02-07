@@ -1,7 +1,6 @@
 import * as React from "react"
-import Button from "../../components/button"
-import Card from "../../components/card"
-import Container from "../../components/container"
+
+import { Button, Card, Container } from "../../components/unikkod-components"
 import Layout from "../../components/layout"
 import NavigationHero from "../../components/navigationhero"
 import Seo from "../../components/seo"
