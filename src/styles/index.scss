@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply grid gap-4;
+  }
+
+  .container-layout {
+    @apply container mx-auto py-14 px-3 md:px-0 grid gap-8;
+  }
+
+  button {
+    @apply cursor-pointer w-fit rounded-full px-5 py-2 flex;
+    &.primary {
+      @apply bg-primary text-white;
+    }
+    &.secondary {
+      @apply bg-white text-primary border-primary;
+    }
+    &.plain {
+      @apply bg-transparent px-0 m-0;
+      &:hover {
+        @apply text-primary;
+      }
+    }
+    .icon {
+      @apply ml-1;
+    }
+  }
+
+  .icon {
+    @apply inline-block h-5 w-5 max-h-full max-w-full m-auto;
+  }
+
+  nav {
+    @apply absolute w-full;
+    ul {
+      li {
+        @apply m-4;
+        a {
+          @apply text-white;
+          &:hover {
+            @apply text-primary;
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  p {
+    @apply text-base;
+  }
+  span {
+    @apply text-primary;
+  }
+}
+
+html {
+  body {
+    font-family: "Sora";
+    line-height: 1.75;
+  }
+}
