@@ -1,33 +1,33 @@
 import * as React from "react"
-import Button from "./button"
+import Button from "../button"
 
-import ArrowRightMinor from "../images/ArrowRightMinor.svg"
-import CoWorking from "../images/CoWorking.jpg"
-import Ecommerce from "../images/Ecommerce.jpg"
-import Integration from "../images/Building.jpg"
+import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
+import CoWorking from "../../images/CoWorking.jpg"
+import Ecommerce from "../../images/Ecommerce.jpg"
+import Integration from "../../images/Building.jpg"
 
 const services = [
   {
     title: "Webbutveckling",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ut aliquam tincidunt.",
-    handle: "service",
+    handle: "services/website",
     image: CoWorking,
   },
   {
     title: "E-handel",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ut aliquam tincidunt, nunc nisl aliquam massa.",
-    handle: "service",
+    handle: "services/website",
     image: Ecommerce,
   },
   {
     title: "Integrationer",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod.",
-    handle: "service",
+    handle: "services/website",
     image: Integration,
   },
 ]
 
-export default function Example() {
+export default function Services() {
   return (
     <div className="container mx-auto py-14 px-3 md:px-0">
       <div>
@@ -38,7 +38,7 @@ export default function Example() {
               <img className="rounded" src={service.image} alt={service.title} />
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <Button type="plain" icon={ArrowRightMinor}>Läs mer</Button>
+              <Button type="plain" icon={ArrowRightMinor} to={service.handle}>Läs mer</Button>
             </div>
           ))}
         </div>

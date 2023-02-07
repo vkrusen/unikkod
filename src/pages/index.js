@@ -1,14 +1,14 @@
 import * as React from "react"
 import Hero from "../components/start/hero"
 
-import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Example from "../components/Example"
+import Layout from "../components/layout"
+import Services from "../components/start/services"
 
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <Example />
+    <Services />
   </Layout>
 )
 

@@ -2,13 +2,9 @@ import * as React from "react"
 
 const Footer = () => {
   return (
-    <section>
-      <div className="py-2 px-8">
-        <p className="text-black mt-4">
-          © {new Date().getFullYear()} Unikkod AB
-        </p>
-      </div>
-    </section>
+    <div className="container mx-auto py-4 px-3 md:px-0 grid gap-8">
+      <p className="text-black mt-4">© {new Date().getFullYear()} Unikkod AB</p>
+    </div>
   )
 }
 
