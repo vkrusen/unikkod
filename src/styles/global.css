@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply grid gap-4;
+  }
+  .container-layout {
+    @apply container mx-auto py-14 px-3 md:px-0 grid gap-8;
+  }
+}

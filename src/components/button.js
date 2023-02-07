@@ -1,7 +1,7 @@
 import * as React from "react"
 import Icon from "./icon"
 
-const Button = ({ type, icon, to = "", children }) => {
+const Button = ({ type, icon, to = "404", children }) => {
   return (
     <button className={type + " mx-auto sm:mx-2"} onClick={navigateTo}>
       {children}

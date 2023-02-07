@@ -1,23 +1,19 @@
 import * as React from "react"
 import Button from "../../components/button"
+import Card from "../../components/card"
+import Container from "../../components/container"
 import Layout from "../../components/layout"
+import NavigationHero from "../../components/navigationhero"
 import Seo from "../../components/seo"
 
 import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
-import backgroundImage from "../../images/NavigationHero.svg"
 
 export default function Website() {
   return (
     <Layout>
-      <div
-        className="bg-cover bg-center h-20 "
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      ></div>
-      <div className="container mx-auto py-14 px-3 md:px-0 grid gap-8">
-        <div className="grid gap-0">
-          <Button type="plain" icon={ArrowRightMinor} to="/services">
-            Andra tjänster
-          </Button>
+      <NavigationHero />
+      <Container>
+        <Card>
           <h1>Webbsida</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
@@ -25,8 +21,8 @@ export default function Website() {
             modi ducimus voluptates, eum ipsum nam in! Repellat omnis rerum
             quidem?
           </p>
-        </div>
-        <div className="grid gap-4">
+        </Card>
+        <Card>
           <h2>Hur är upplägget?</h2>
           <p>
             Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-4
@@ -55,8 +51,8 @@ export default function Website() {
               </p>
             </StepCard>
           </div>
-        </div>
-        <div className="grid gap-4">
+        </Card>
+        <Card>
           <h2>Använder ni WordPress?</h2>
           <p>
             Hos oss är du som väljer. Vi erbjuder att kunna välja mellan ett
@@ -64,8 +60,8 @@ export default function Website() {
             WordPress, Strapi, GraphCMS och Contentful. modi ducimus voluptates,
             eum ipsum nam in! Repellat omnis rerum quidem?
           </p>
-        </div>
-        <div className="grid gap-4">
+        </Card>
+        <Card>
           <h2>Vad kostar det?</h2>
           <p>
             Vi utgår från en fast prislista. Lorem ipsum dolor, sit amet
@@ -73,8 +69,14 @@ export default function Website() {
             Itaque eveniet quibusdam nobis ea modi ducimus voluptates, eum ipsum
             nam in! Repellat omnis rerum quidem?
           </p>
-        </div>
-      </div>
+          <Button type="plain" icon={ArrowRightMinor} to="/services">
+            Se prislista
+          </Button>
+          <Button type="plain" icon={ArrowRightMinor} to="/services">
+            Snacka med oss
+          </Button>
+        </Card>
+      </Container>
     </Layout>
   )
 }

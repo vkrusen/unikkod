@@ -8,6 +8,7 @@ import ArrowRightMinor from "../images/ArrowRightMinor.svg"
 import CoWorking from "../images/CoWorking.jpg"
 import Ecommerce from "../images/Ecommerce.jpg"
 import Integration from "../images/Building.jpg"
+import NavigationHero from "../components/navigationhero"
 
 const services = [
   {
@@ -35,6 +36,7 @@ const services = [
 
 const Services = () => (
   <Layout>
+    <NavigationHero />
     <div className="container mx-auto py-20 px-3 md:px-0">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
         Tjänster
