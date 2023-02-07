@@ -1,12 +1,12 @@
 import * as React from "react"
 
-import Layout from "../components/layout"
+import { Page } from "../components/unikkod-components"
 import Seo from "../components/seo"
 
 const News = () => (
-  <Layout>
+  <Page>
     <h1>Aktuellt</h1>
-  </Layout>
+  </Page>
 )
 
 export const Head = () => <Seo title="Aktuellt" />

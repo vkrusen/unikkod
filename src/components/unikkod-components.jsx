@@ -1,5 +1,26 @@
 import React, { useState, useEffect } from "react"
 
+import Footer from "./footer"
+import Navigation from "./navigation"
+import NavigationHero from "./navigationhero"
+
+// Page used to wrap whole page
+export function Page({ children }) {
+  return (
+    <div className="page">
+      <meta name="theme-color" content="#004356" />
+      <Navigation />
+      <main>
+        <NavigationHero />
+        <Container>{children}</Container>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  )
+}
+
 // Container used to wrap whole page
 export function Container({ children }) {
   return <div className="container-layout">{children}</div>
@@ -31,16 +52,11 @@ export function Icon({ path }) {
   )
 }
 
-// Button
-export function Button({ type, icon, to = "404", children }) {
+export function Button({ type, icon, onClick, children }) {
   return (
-    <button className={type + " mx-auto sm:mx-2"} onClick={navigateTo}>
+    <button className={type + " mx-auto sm:mx-2"} onClick={onClick}>
       {children}
       {icon && <Icon path={icon} />}
     </button>
   )
-
-  function navigateTo() {
-    window.location.pathname = to
-  }
 }

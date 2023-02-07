@@ -21,12 +21,21 @@ const Navigation = () => {
       <ul className="flex">
         {links.map((link, index) => (
           <li key={index} className="mx-4">
-            <a href={link.url} className="font-medium">{link.title}</a>
+            <a
+              className="cursor-pointer font-medium"
+              onClick={() => navigateTo(`/${link.url}`)}
+            >
+              {link.title}
+            </a>
           </li>
         ))}
       </ul>
     </nav>
   )
+
+  function navigateTo(to) {
+    window.location.href = to
+  }
 }
 
 export default Navigation

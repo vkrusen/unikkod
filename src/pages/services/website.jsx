@@ -1,82 +1,76 @@
 import * as React from "react"
 
-import { Button, Card, Container } from "../../components/unikkod-components"
-import Layout from "../../components/layout"
-import NavigationHero from "../../components/navigationhero"
+import { Button, Card, Page } from "../../components/unikkod-components"
 import Seo from "../../components/seo"
 
 import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
 
 export default function Website() {
   return (
-    <Layout>
-      <NavigationHero />
-      <Container>
-        <Card>
-          <h1>Webbsida</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-            explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis ea
-            modi ducimus voluptates, eum ipsum nam in! Repellat omnis rerum
-            quidem?
-          </p>
-        </Card>
-        <Card>
-          <h2>Hur är upplägget?</h2>
-          <p>
-            Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-4
-            veckor från första steget tills att hemsidan är klar.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 ">
-            <StepCard step={1} title="Uppstartsmöte" current>
-              <p>
-                Vi går igenom och hjälper dig hitta vad du behöver. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Totam explicabo
-                dolore ex amet odit? Itaque eveniet quibusdam nobis ea modi
-                ducimus voluptates.
-              </p>
-            </StepCard>
-            <StepCard step={2} title="Utveckling" animate>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis.
-              </p>
-            </StepCard>
-            <StepCard step={3} title="Lansering">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis ea
-                modi ducimus voluptates, eum ipsum nam in.
-              </p>
-            </StepCard>
-          </div>
-        </Card>
-        <Card>
-          <h2>Använder ni WordPress?</h2>
-          <p>
-            Hos oss är du som väljer. Vi erbjuder att kunna välja mellan ett
-            brett urval av Content managements systems (CMS). Bland annat
-            WordPress, Strapi, GraphCMS och Contentful. modi ducimus voluptates,
-            eum ipsum nam in! Repellat omnis rerum quidem?
-          </p>
-        </Card>
-        <Card>
-          <h2>Vad kostar det?</h2>
-          <p>
-            Vi utgår från en fast prislista. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Totam explicabo dolore ex amet odit?
-            Itaque eveniet quibusdam nobis ea modi ducimus voluptates, eum ipsum
-            nam in! Repellat omnis rerum quidem?
-          </p>
-          <Button type="plain" icon={ArrowRightMinor} to="/services">
-            Se prislista
-          </Button>
-          <Button type="plain" icon={ArrowRightMinor} to="/services">
-            Snacka med oss
-          </Button>
-        </Card>
-      </Container>
-    </Layout>
+    <Page>
+      <Card>
+        <h1>Webbsida</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+          explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis ea modi
+          ducimus voluptates, eum ipsum nam in! Repellat omnis rerum quidem?
+        </p>
+      </Card>
+      <Card>
+        <h2>Hur är upplägget?</h2>
+        <p>
+          Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-4
+          veckor från första steget tills att hemsidan är klar.
+        </p>
+        <div className="grid md:grid-cols-3 gap-8 ">
+          <StepCard step={1} title="Uppstartsmöte" current>
+            <p>
+              Vi går igenom och hjälper dig hitta vad du behöver. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Totam explicabo
+              dolore ex amet odit? Itaque eveniet quibusdam nobis ea modi
+              ducimus voluptates.
+            </p>
+          </StepCard>
+          <StepCard step={2} title="Utveckling" animate>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis.
+            </p>
+          </StepCard>
+          <StepCard step={3} title="Lansering">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis ea
+              modi ducimus voluptates, eum ipsum nam in.
+            </p>
+          </StepCard>
+        </div>
+      </Card>
+      <Card>
+        <h2>Använder ni WordPress?</h2>
+        <p>
+          Hos oss är du som väljer. Vi erbjuder att kunna välja mellan ett brett
+          urval av Content managements systems (CMS). Bland annat WordPress,
+          Strapi, GraphCMS och Contentful. modi ducimus voluptates, eum ipsum
+          nam in! Repellat omnis rerum quidem?
+        </p>
+      </Card>
+      <Card>
+        <h2>Vad kostar det?</h2>
+        <p>
+          Vi utgår från en fast prislista. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Totam explicabo dolore ex amet odit?
+          Itaque eveniet quibusdam nobis ea modi ducimus voluptates, eum ipsum
+          nam in! Repellat omnis rerum quidem?
+        </p>
+        <Button type="plain" icon={ArrowRightMinor} onClick={() => console.log("Click")}>
+          Se prislista
+        </Button>
+        <Button type="plain" icon={ArrowRightMinor} onClick={() => console.log("Click")}>
+          Snacka med oss
+        </Button>
+      </Card>
+    </Page>
   )
 }
 
