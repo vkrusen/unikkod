@@ -175,7 +175,7 @@ export default function Website() {
         </Button>
       </Card>
       <StickyCallToAction
-        title="Beställ hemsida med fast pris"
+        title="Beställ med fast pris"
         onClick={() => console.log("Clicked")}
         icon={ArrowRightMinor}
       />
