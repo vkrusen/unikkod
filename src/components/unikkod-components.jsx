@@ -37,7 +37,7 @@ export function Footer() {
         <div className="footer__links">
           {footer.map((item, index) => (
             <div key={index}>
-              <h3>{item.title}</h3>
+              <h4>{item.title}</h4>
               <ul>
                 {item.links.map((link, index) => (
                   <li key={index}>
