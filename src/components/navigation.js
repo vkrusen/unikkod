@@ -48,7 +48,9 @@ const Navigation = () => {
         </div>
         <div className="right">
           {!menuOpen && (
-            <Button onClick={() => setMenuOpen(!menuOpen)} type="plain">Meny</Button>
+            <Button onClick={() => setMenuOpen(!menuOpen)} type="plain">
+              Meny
+            </Button>
           )}
         </div>
       </div>
@@ -57,6 +59,9 @@ const Navigation = () => {
       {menuOpen && (
         <div className="navbar__mobile-menu">
           <ul>
+            <li>
+              <Link to="/">Logo</Link>
+            </li>
             {links.map((link, index) => (
               <li key={index}>
                 <Link to={`/${link.url}`} activeClassName="text-primary">
@@ -65,7 +70,14 @@ const Navigation = () => {
               </li>
             ))}
           </ul>
-          <Button onClick={() => setMenuOpen(!menuOpen)} type="plain" icon={Close} iconPlacement="after">Stäng</Button>
+          <Button
+            onClick={() => setMenuOpen(!menuOpen)}
+            type="plain"
+            icon={Close}
+            iconPlacement="after"
+          >
+            Stäng
+          </Button>
         </div>
       )}
     </nav>
