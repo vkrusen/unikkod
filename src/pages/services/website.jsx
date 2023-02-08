@@ -14,7 +14,7 @@ import CoWorking from "../../images/CoWorking.jpg"
 
 export default function Website() {
   return (
-    <Page image={CoWorking}>
+    <Page image={CoWorking} themeColor="#FFFFFF">
       <Card>
         <h1>Webbsida</h1>
         <Divider />
