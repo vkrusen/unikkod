@@ -10,10 +10,11 @@ import {
 } from "../../components/unikkod-components"
 
 import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
+import CoWorking from "../../images/CoWorking.jpg"
 
 export default function Website() {
   return (
-    <Page>
+    <Page image={CoWorking}>
       <Card>
         <h1>Webbsida</h1>
         <Divider />

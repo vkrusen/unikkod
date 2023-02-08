@@ -8,13 +8,13 @@ import ArrowRightMinor from "../images/icons/ArrowRightMinor.svg"
 import company from "../modules/company"
 
 // Page used to wrap whole page
-export function Page({ children }) {
+export function Page({ image, children }) {
   return (
     <div className="page">
       <meta name="theme-color" content="#004356" />
       <Navigation />
       <main>
-        <NavigationHero />
+        {image && <img src={image} className="h-80 w-full object-cover" /> || <NavigationHero />}
         <Container>{children}</Container>
       </main>
       <footer>
