@@ -13,15 +13,15 @@ export default function Services() {
     <Layout>
       <NavigationHero />
       <div className="container mx-auto py-20 px-3 md:px-0">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-left mb-8">
           Tjänster
         </h1>
         {services.map((service, index) => (
           <div
-            className="flex flex-col md:flex-row items-center justify-center mb-12"
+            className="flex flex-col md:flex-row items-left justify-left mb-12"
             key={index}
           >
-            <div className="w-full md:w-1/4">
+            <div className="w-full mb-4 md:mb-0 md:w-1/4">
               <img
                 className="rounded"
                 src={service.image}

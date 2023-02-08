@@ -16,7 +16,7 @@ export default function Website() {
   return (
     <Page image={CoWorking} themeColor="#FFFFFF">
       <Card>
-        <h1>Webbsida</h1>
+        <h1>Webbutveckling</h1>
         <Divider />
         <p>
           När du driver ett mindre eller nystartat företag vet du att varje
@@ -92,6 +92,7 @@ export default function Website() {
           mellan 5000-10 000 kr. Vi ser fram emot att hjälpa dig att skapa den
           perfekta hemsidan för ditt företag!
         </p>
+        <Divider position="center"/>
       </Card>
       <Card>
         <h3>Använder ni WordPress?</h3>
