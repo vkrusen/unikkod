@@ -4,7 +4,7 @@ import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
 import CoWorking from "../../images/CoWorking.jpg"
 import Ecommerce from "../../images/Ecommerce.jpg"
 import Integration from "../../images/Building.jpg"
-import { Button } from "../unikkod-components"
+import { Button, Divider } from "../unikkod-components"
 import { Link } from "gatsby"
 
 const services = [
@@ -36,6 +36,7 @@ export default function Services() {
     <div className="container mx-auto py-14 px-3 md:px-0">
       <div>
         <h2>Vad kan vi hjälpa dig med?</h2>
+        <Divider />
         <div className="grid md:grid-cols-3 gap-4">
           {services.map(service => (
             <div className="flex flex-col py-4 space-y-4 text-left items-start">

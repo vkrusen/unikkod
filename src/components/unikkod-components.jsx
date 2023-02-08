@@ -62,3 +62,7 @@ export function Button({ type, icon, iconPlacement = "after", onClick, to, child
     </button>
   )
 }
+
+export function Divider() {
+  return <hr className="divider" />
+}

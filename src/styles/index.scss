@@ -29,6 +29,10 @@
     @apply container mx-auto py-14 px-3 md:px-0 grid gap-8;
   }
 
+  .divider {
+    @apply border-b-2 rounded border-primary w-28 my-4;
+  }
+
   nav {
     @apply absolute w-full h-24 flex items-center justify-center p-4 text-white;
     .navbar__desktop {
@@ -64,7 +68,7 @@
   }
 
   button {
-    @apply cursor-pointer w-fit rounded-full px-5 py-2 flex;
+    @apply cursor-pointer w-fit rounded px-5 py-2 flex;
     &.primary {
       @apply bg-primary text-white;
     }

@@ -1,7 +1,7 @@
 import * as React from "react"
 import Seo from "../../components/seo"
 
-import { Button, Card, Page } from "../../components/unikkod-components"
+import { Button, Card, Divider, Page } from "../../components/unikkod-components"
 
 import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
 
@@ -10,6 +10,7 @@ export default function Website() {
     <Page>
       <Card>
         <h1>Webbsida</h1>
+        <Divider />
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
           explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis ea modi
