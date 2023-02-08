@@ -3,18 +3,20 @@
 @tailwind utilities;
 
 @layer components {
-  // Body
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-bold leading-normal;
   }
   h2 {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-bold leading-normal;
   }
   h3 {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold leading-normal;
+  }
+  h4 {
+    @apply text-lg font-bold leading-normal;
   }
   p {
-    @apply text-base;
+    @apply text-base leading-normal;
   }
   span {
     @apply text-primary;
@@ -35,6 +37,9 @@
       @apply flex flex-col md:flex-row justify-between items-start gap-8;
       .footer__links {
         @apply flex flex-col gap-4 md:gap-32 md:flex-row justify-start;
+        ul li button {
+          @apply py-1;
+        }
       }
     }
     .footer__name {
@@ -73,7 +78,7 @@
       @apply flex md:hidden flex-1 h-full items-center justify-between;
     }
     .navbar__mobile-menu {
-      @apply flex md:hidden flex-col space-y-4 py-4 px-3 fixed top-0 left-0 w-full h-fit bg-secondary shadow-2xl border-primary border-b-2 z-50;
+      @apply flex md:hidden flex-col space-y-7 py-4 px-3 fixed top-0 left-0 w-full h-fit bg-secondary shadow-2xl border-primary border-b-2 z-50;
       ul {
         @apply space-y-2;
       }

@@ -1,7 +1,13 @@
 import * as React from "react"
 import Seo from "../../components/seo"
 
-import { Button, Card, Divider, Page, StickyCallToAction } from "../../components/unikkod-components"
+import {
+  Button,
+  Card,
+  Divider,
+  Page,
+  StickyCallToAction,
+} from "../../components/unikkod-components"
 
 import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
 
@@ -12,9 +18,17 @@ export default function Website() {
         <h1>Webbsida</h1>
         <Divider />
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-          explicabo dolore ex amet odit? Itaque eveniet quibusdam nobis ea modi
-          ducimus voluptates, eum ipsum nam in! Repellat omnis rerum quidem?
+          När du driver ett mindre eller nystartat företag vet du att varje
+          investering måste ge utdelning. Du vill ha en hemsida som inte bara
+          ser fantastisk ut, utan också levererar resultat. Det är därför du
+          behöver ett team som förstår dina mål och behov. Unikkod är det
+          svenska teamet som designar och kodar allt inhouse, utan mallar.
+        </p>
+        <p>
+          Vi är dedikerade att hjälpa dig att skapa en unik, kostnadseffektiv
+          hemsida som levererar resultat, oavsett om du vill sälja online, öka
+          ditt varumärkesmedvetande eller bara bygga ditt digitala företag. Låt
+          oss hjälpa dig att nå ditt mål med en hemsida du kan vara stolt över.
         </p>
       </Card>
       <Card>
@@ -64,14 +78,25 @@ export default function Website() {
           Itaque eveniet quibusdam nobis ea modi ducimus voluptates, eum ipsum
           nam in! Repellat omnis rerum quidem?
         </p>
-        <Button type="plain" icon={ArrowRightMinor} onClick={() => console.log("Click")}>
+        <Button
+          type="plain"
+          icon={ArrowRightMinor}
+          onClick={() => console.log("Click")}
+        >
           Se prislista
         </Button>
-        <Button type="plain" icon={ArrowRightMinor} onClick={() => console.log("Click")}>
+        <Button
+          type="plain"
+          icon={ArrowRightMinor}
+          onClick={() => console.log("Click")}
+        >
           Snacka med oss
         </Button>
       </Card>
-      <StickyCallToAction title="Se prislista" onClick={() => console.log("Clicked")} />
+      <StickyCallToAction
+        title="Se prislista"
+        onClick={() => console.log("Clicked")}
+      />
     </Page>
   )
 }
@@ -80,8 +105,18 @@ function StepCard({ step, title, current = false, animate = false, children }) {
   return (
     <div className="flex flex-col gap-4">
       <div className="p-4 border-2 border-solid border-gray-100 rounded-lg ">
-        <div className={`w-100% h-1 rounded mb-4 ${current || animate ? "bg-primary" : "bg-gray-200"} ${animate ? "animate-pulse" : null}`} />
-        <h4 className={`${current || animate ? "text-primary" : "text-gray-400"} ${animate ? "animate-pulse" : null}`}>Steg {step}</h4>
+        <div
+          className={`w-100% h-1 rounded mb-4 ${
+            current || animate ? "bg-primary" : "bg-gray-200"
+          } ${animate ? "animate-pulse" : null}`}
+        />
+        <h4
+          className={`${
+            current || animate ? "text-primary" : "text-gray-400"
+          } ${animate ? "animate-pulse" : null}`}
+        >
+          Steg {step}
+        </h4>
         <p>{title}</p>
       </div>
       {children}

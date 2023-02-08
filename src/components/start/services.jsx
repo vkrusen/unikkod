@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <div className="container mx-auto py-14 px-3 md:px-0">
       <div>
-        <h2>Vad kan vi hjälpa dig med?</h2>
+        <h2>Vi har lösningarna - Vad kan vi hjälpa dig med?</h2>
         <Divider />
         <div className="grid md:grid-cols-3 gap-4">
           {services.map((service, index) => (
