@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
+import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
 import CoWorking from "../../images/CoWorking.jpg"
 import Ecommerce from "../../images/Ecommerce.jpg"
 import Integration from "../../images/Building.jpg"

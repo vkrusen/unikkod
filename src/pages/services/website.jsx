@@ -3,7 +3,7 @@ import Seo from "../../components/seo"
 
 import { Button, Card, Divider, Page } from "../../components/unikkod-components"
 
-import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
+import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
 
 export default function Website() {
   return (

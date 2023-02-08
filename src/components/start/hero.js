@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Button } from "../unikkod-components"
 
-import ArrowRightMinor from "../../images/ArrowRightMinor.svg"
+import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
 import backgroundImage from "../../images/Hero.svg"
 
 const Hero = () => {

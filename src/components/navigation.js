@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Button } from "./unikkod-components"
 
-import Close from "../images/ArrowUpMinor.svg"
+import Close from "../images/icons/ArrowUpMinor.svg"
 
 const links = [
   {

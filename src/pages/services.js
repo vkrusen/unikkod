@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Button } from "../components/unikkod-components"
 
-import ArrowRightMinor from "../images/ArrowRightMinor.svg"
+import ArrowRightMinor from "../images/icons/ArrowRightMinor.svg"
 import CoWorking from "../images/CoWorking.jpg"
 import Ecommerce from "../images/Ecommerce.jpg"
 import Integration from "../images/Building.jpg"
