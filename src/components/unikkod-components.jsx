@@ -1,9 +1,11 @@
 import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
+import footer from "../modules/footer"
 
 import Navigation from "./navigation"
 import NavigationHero from "./navigationhero"
-import Footer from "./footer"
+import ArrowRightMinor from "../images/icons/ArrowRightMinor.svg"
+import company from "../modules/company"
 
 // Page used to wrap whole page
 export function Page({ children }) {
@@ -18,6 +20,36 @@ export function Page({ children }) {
       <footer>
         <Footer />
       </footer>
+    </div>
+  )
+}
+
+// Footer - This is configured in the footer module
+export function Footer() {
+  return (
+    <div className="footer">
+      <div className="footer_wrapper">
+        <div className="footer__logo">
+          <Link to="/">
+            Logo
+          </Link>
+        </div>
+        <div className="footer__links">
+          {footer.map((item, index) => (
+            <div key={index}>
+              <h3>{item.title}</h3>
+              <ul>
+                {item.links.map((link, index) => (
+                  <li key={index}>
+                    <Button to={link.url} type="plain" icon={ArrowRightMinor}>{link.title}</Button>
+                  </li>
+                ))}
+              </ul>
+          </div>
+          ))}
+        </div>
+      </div>
+      <p>© {new Date().getFullYear()} {company.name}</p>
     </div>
   )
 }
@@ -59,11 +91,18 @@ export function Divider() {
 }
 
 // Button component
-export function Button({ type, icon, iconPlacement = "after", onClick, to, children }) {
+export function Button({
+  type,
+  icon,
+  iconPlacement = "after",
+  onClick,
+  to,
+  children,
+}) {
   return (
     <button className={type + " mx-auto sm:mx-2"} onClick={onClick}>
       {icon && iconPlacement === "before" && <Icon path={icon} />}
-      {to && <Link to={to}>{children}</Link> || children}
+      {(to && <Link to={to}>{children}</Link>) || children}
       {icon && iconPlacement === "after" && <Icon path={icon} />}
     </button>
   )

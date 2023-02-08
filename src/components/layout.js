@@ -1,11 +1,11 @@
 import * as React from "react"
-import Footer from "./footer"
 import Navigation from "./navigation"
+import { Footer } from "./unikkod-components"
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <meta name="theme-color" content="#004356" />
+      <meta name="theme-color" content="#007b78" />
       <Navigation />
       <main>{children}</main>
       <footer>
