@@ -49,7 +49,7 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <p>© {new Date().getFullYear()} {company.name}</p>
+      <p className="footer__name">© {new Date().getFullYear()} {company.name}</p>
     </div>
   )
 }
