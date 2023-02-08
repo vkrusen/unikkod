@@ -21,7 +21,7 @@ const Hero = () => {
         </p>
         <div className="text-white flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
           <Button type="primary" icon={ArrowRightMinor}>
-            Få kostnadsfri offert
+            Se vår prislista
           </Button>
           <Button type="plain" icon={ArrowRightMinor} to="services">
             Visa alla tjänster
