@@ -5,34 +5,8 @@ import Seo from "../components/seo"
 import { Button } from "../components/unikkod-components"
 
 import ArrowRightMinor from "../images/icons/ArrowRightMinor.svg"
-import CoWorking from "../images/CoWorking.jpg"
-import Ecommerce from "../images/Ecommerce.jpg"
-import Integration from "../images/Building.jpg"
 import NavigationHero from "../components/navigationhero"
-
-const services = [
-  {
-    title: "Webbutveckling",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ut aliquam tincidunt.",
-    handle: "services/website",
-    image: CoWorking,
-  },
-  {
-    title: "E-handel",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ut aliquam tincidunt, nunc nisl aliquam massa.",
-    handle: "services/website",
-    image: Ecommerce,
-  },
-  {
-    title: "Integrationer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod.",
-    handle: "services/website",
-    image: Integration,
-  },
-]
+import services from "../modules/services"
 
 export default function Services() {
   return (
@@ -70,9 +44,6 @@ export default function Services() {
       </div>
     </Layout>
   )
-  function navigateTo(to) {
-    window.location.href = to
-  }
 }
 
 export const Head = () => <Seo title="Tjänster" />

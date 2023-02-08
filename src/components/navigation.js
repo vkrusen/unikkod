@@ -3,21 +3,7 @@ import { Link } from "gatsby"
 import { Button } from "./unikkod-components"
 
 import Close from "../images/icons/ArrowUpMinor.svg"
-
-const links = [
-  {
-    title: "Tjänster",
-    url: "services",
-  },
-  {
-    title: "Kundcase",
-    url: "cases",
-  },
-  {
-    title: "Aktuellt",
-    url: "news",
-  },
-]
+import navbar from "../modules/navbar"
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = React.useState(false)
@@ -30,7 +16,7 @@ const Navigation = () => {
           <Link to="/">Logo</Link>
         </div>
         <ul>
-          {links.map((link, index) => (
+          {navbar.map((link, index) => (
             <li key={index}>
               <Link to={`/${link.url}`} activeClassName="text-primary">
                 {link.title}
@@ -62,7 +48,7 @@ const Navigation = () => {
             <li>
               <Link to="/">Logo</Link>
             </li>
-            {links.map((link, index) => (
+            {navbar.map((link, index) => (
               <li key={index}>
                 <Link to={`/${link.url}`} activeClassName="text-primary">
                   {link.title}
