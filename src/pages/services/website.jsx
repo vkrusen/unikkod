@@ -162,13 +162,6 @@ export default function Website() {
           icon={ArrowRightMinor}
           onClick={() => console.log("Click")}
         >
-          Beställ hemsida med fast pris
-        </Button>
-        <Button
-          type="plain"
-          icon={ArrowRightMinor}
-          onClick={() => console.log("Click")}
-        >
           Se prislista
         </Button>
         <Button
@@ -180,8 +173,9 @@ export default function Website() {
         </Button>
       </Card>
       <StickyCallToAction
-        title="Se prislista"
+        title="Beställ hemsida med fast pris"
         onClick={() => console.log("Clicked")}
+        icon={ArrowRightMinor}
       />
     </Page>
   )
