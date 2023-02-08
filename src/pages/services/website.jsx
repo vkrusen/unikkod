@@ -128,6 +128,42 @@ export default function Website() {
           pengarna. Vi vill också poängtera att du alltid får en högkvalitativ
           hemsida från oss, oavsett pris.
         </p>
+      </Card>
+      <Card>
+        <h3>
+          Kan ni hjälpa mig med integrationer med andra plattformar jag
+          använder?
+        </h3>
+        <p>
+          Vi har erfarenhet av att integrera olika plattformar och tjänster med
+          våra hemsidor. Vi hjälper dig att ansluta andra tjänster, som
+          exempelvis bokningssystem, så att dina kunder kan boka möten direkt
+          från din hemsida. Vi strävar alltid efter att göra så att alla delar
+          av din verksamhet fungerar så smidigt och enkelt som möjligt, och
+          integreringar med andra plattformar spelar en stor roll i det. Vi
+          jobbar noga med att se till att alla integreringar fungerar korrekt
+          och säkerställer att ditt företag har den bästa möjliga upplevelsen.
+        </p>
+      </Card>
+      <Card>
+        <h3>Hur ofta kommer ni att ha kontakt med mig under projektet?</h3>
+        <p>
+          Vi förstår att det är viktigt för dig som kund att ha kontroll över
+          projektet. Därför ser vi till att ha regelbunden kontakt med dig för
+          att säkerställa att allt går enligt planen. Vi hör bara av oss om vi
+          behöver någon form av information från dig, men du kan när som helst
+          nå oss via telefon, e-post eller vår chat. Vi är alltid här för att
+          hjälpa och stödja dig under hela projektet.
+        </p>
+      </Card>
+      <Card>
+        <Button
+          type="plain"
+          icon={ArrowRightMinor}
+          onClick={() => console.log("Click")}
+        >
+          Beställ hemsida med fast pris
+        </Button>
         <Button
           type="plain"
           icon={ArrowRightMinor}
