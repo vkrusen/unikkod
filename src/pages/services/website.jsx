@@ -1,7 +1,7 @@
 import * as React from "react"
 import Seo from "../../components/seo"
 
-import { Button, Card, Divider, Page } from "../../components/unikkod-components"
+import { Button, Card, Divider, Page, StickyCallToAction } from "../../components/unikkod-components"
 
 import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
 
@@ -71,6 +71,7 @@ export default function Website() {
           Snacka med oss
         </Button>
       </Card>
+      <StickyCallToAction title="Se prislista" onClick={() => console.log("Clicked")} />
     </Page>
   )
 }

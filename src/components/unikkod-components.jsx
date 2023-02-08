@@ -66,3 +66,13 @@ export function Button({ type, icon, iconPlacement = "after", onClick, to, child
 export function Divider() {
   return <hr className="divider" />
 }
+
+export function StickyCallToAction({ title, icon, onClick, to }) {
+  return (
+    <div className="sticky-call-to-action">
+      <Button onClick={onClick} icon={icon} to={to}>
+        {title}
+      </Button>
+    </div>
+  )
+}

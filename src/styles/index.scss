@@ -86,6 +86,10 @@
   .icon {
     @apply inline-block h-5 w-5 max-h-full max-w-full m-auto;
   }
+
+  .sticky-call-to-action {
+    @apply flex items-center fixed bottom-0 left-0 w-full h-14 justify-center bg-secondary text-white;
+  }
 }
 
 html {
