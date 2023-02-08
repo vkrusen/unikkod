@@ -53,6 +53,12 @@ export function Icon({ path }) {
   )
 }
 
+// Divider component
+export function Divider() {
+  return <hr className="divider" />
+}
+
+// Button component
 export function Button({ type, icon, iconPlacement = "after", onClick, to, children }) {
   return (
     <button className={type + " mx-auto sm:mx-2"} onClick={onClick}>
@@ -63,10 +69,7 @@ export function Button({ type, icon, iconPlacement = "after", onClick, to, child
   )
 }
 
-export function Divider() {
-  return <hr className="divider" />
-}
-
+// Sticky call to action component
 export function StickyCallToAction({ title, icon, onClick, to }) {
   return (
     <div className="sticky-call-to-action">
