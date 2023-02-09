@@ -91,7 +91,7 @@
       @apply bg-primary text-white;
     }
     &.secondary {
-      @apply bg-white text-primary border-primary;
+      @apply bg-white text-primary border-primary border;
     }
     &.plain {
       @apply bg-transparent px-0 m-0 hover:text-primary;

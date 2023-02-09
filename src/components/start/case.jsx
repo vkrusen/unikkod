@@ -29,7 +29,7 @@ function SubHeadline() {
 function ScreenshotCard({ screenshot, alt }) {
   return (
     <div className="flex flex-col-reverse md:flex-row gap-10 h-fit md:h-[620px]">
-      <div className="space-y-2 md:w-1/2 md:pr-10">
+      <div className="space-y-4 md:w-1/2 md:pr-10">
         <p>
           På Unikkod är vi stolta över våra framgångsrika projekt och kundfall.
           En av våra mest imponerande kunder är Comfornette, som vi hade glädjen
@@ -47,7 +47,7 @@ function ScreenshotCard({ screenshot, alt }) {
           framgång på nätet och över de fantastiska resultaten vi har uppnått
           tillsammans.
         </p>
-        <Button to="/case/comfornette" type="plain" icon={Icon}>
+        <Button to="/case/comfornette" type="secondary" icon={Icon}>
           Läs mer
         </Button>
       </div>
