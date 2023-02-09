@@ -1,79 +1,66 @@
-import Agility from "../images/cms/agilitycms.png"
-import buttercms from "../images/cms/buttercms.png"
-import contentful from "../images/cms/contentful.png"
-import contentstack from "../images/cms/contentstack.png"
-import datocms from "../images/cms/datocms.png"
-import drupal from "../images/cms/drupal.png"
-import flotiq from "../images/cms/flotiq.png"
-import graphcms from "../images/cms/graphcms.png"
-import kentico from "../images/cms/kentico.png"
-import netlify from "../images/cms/netlify.png"
-import prismic from "../images/cms/prismic.png"
-import sanity from "../images/cms/sanity.png"
-import storyblok from "../images/cms/storyblok.png"
-import strapi from "../images/cms/strapi.png"
-import WordPress from "../images/cms/wordpress.png"
+import images from "../images/cms/images.js"
 
 const CMS = [
   {
     title: "WordPress",
-    image: WordPress,
+    image: images.wordpress,
+    popular: true,
   },
   {
     title: "Agility",
-    image: Agility,
+    image: images.agility,
   },
   {
     title: "ButterCMS",
-    image: buttercms,
+    image: images.buttercms,
   },
   {
     title: "Contentful",
-    image: contentful,
+    image: images.contentful,
   },
   {
     title: "Contentstack",
-    image: contentstack,
+    image: images.contentstack,
   },
   {
     title: "DatoCMS",
-    image: datocms,
+    image: images.datocms,
   },
   {
     title: "Drupal",
-    image: drupal,
+    image: images.drupal,
   },
   {
     title: "Flotiq",
-    image: flotiq,
+    image: images.flotiq,
   },
   {
     title: "GraphCMS",
-    image: graphcms,
+    image: images.graphcms,
   },
   {
     title: "Kentico",
-    image: kentico,
+    image: images.kentico,
   },
   {
     title: "Netlify",
-    image: netlify,
+    image: images.netlify,
   },
   {
     title: "Prismic",
-    image: prismic,
+    image: images.prismic,
   },
   {
     title: "Sanity",
-    image: sanity,
+    image: images.sanity,
   },
   {
     title: "Storyblok",
-    image: storyblok,
+    image: images.storyblok,
   },
   {
     title: "Strapi",
-    image: strapi,
+    image: images.strapi,
   },
 ]
 

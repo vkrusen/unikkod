@@ -61,7 +61,7 @@ export default function Website() {
               använda och har den rätta känslan och stilen för ditt företag.
             </p>
           </StepCard>
-          <StepCard step={2} title="Kodning" animate>
+          <StepCard step={2} title="Kodning" current>
             <p>
               När designen är klar sätter vi igång med kodningen. Vi använder
               React för att göra hemsidan så effektiv som möjligt, vilket gör
@@ -69,7 +69,7 @@ export default function Website() {
               besökarna.
             </p>
           </StepCard>
-          <StepCard step={3} title="Publicering">
+          <StepCard step={3} title="Publicering" animate>
             <p>
               När kodningen är klar och hemsidan har testats och är redo att gå
               live, ger vi dig information om hur du kan lansera hemsidan. Om du
@@ -120,7 +120,7 @@ export default function Website() {
         </p>
         <div className="grid grid-flow-row gap-2 grid-cols-2 md:grid-cols-5">
           {CMS.map(cms => (
-            <LogoCard key={cms.title} title={cms.title} image={cms.image} />
+            <LogoCard key={cms.title} title={cms.title} image={cms.image} popular={cms.popular} />
           ))}
         </div>
       </Card>
@@ -214,12 +214,14 @@ function StepCard({ step, title, current = false, animate = false, children }) {
   )
 }
 
-function LogoCard({ title, image, children }) {
+function LogoCard({ title, image, popular = false }) {
   return (
-    <div className="flex flex-row items-center gap-2 p-2 border-2 border-solid border-gray-100 rounded-lg">
+    <div className="flex flex-row items-center gap-4 p-2 border-2 border-solid border-gray-100 rounded-lg">
       <img src={image} alt={title} className="w-10" />
-      <p className="text-xs text-left">{title}</p>
-      {children}
+      <div className="grid">
+        <p className="text-xs text-red-800">{popular ? "Populär" : ""}</p>
+        <p className="text-sm text-left">{title}</p>
+      </div>
     </div>
   )
 }
