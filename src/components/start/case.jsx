@@ -11,7 +11,7 @@ export default function Case() {
     <div className="container mx-auto py-14 px-3 md:px-0">
       <div>
         <SubHeadline />
-        <h2>Hur vi hjälpte Comfornette</h2>
+        <h2>Så lyfte vi Comfornette</h2>
         <Divider />
         <ScreenshotCard screenshot={Comfornette} alt="Comfornette" />
       </div>
@@ -38,10 +38,10 @@ function ScreenshotCard({ screenshot, alt }) {
   return (
     <div className="flex flex-col-reverse md:flex-row gap-10 h-fit md:h-[620px]">
       <div className="space-y-4 md:w-1/2 md:pr-10">
-        <TruncateParagraphs paragraphs={paragraphs} />
         <Button to="/case/comfornette" type="secondary" icon={Icon}>
-          Läs mer om case
+          Läs hela caset
         </Button>
+        <TruncateParagraphs paragraphs={paragraphs} />
       </div>
       <div className="w-full md:w-1/2 static md:absolute md:right-0">
         <img
