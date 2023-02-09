@@ -32,7 +32,7 @@ export default function Services() {
                   icon={ArrowRightMinor}
                   to={`${service.handle}`}
                 >
-                  Läs mer
+                  Mer om {service.title.toLowerCase()}
                 </Button>
               </div>
             )
