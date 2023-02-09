@@ -64,9 +64,8 @@ export default function Website() {
           <StepCard step={2} title="Kodning (1 vecka)" current>
             <p>
               När designen är klar sätter vi igång med kodningen. Vi använder
-              React för att göra hemsidan så effektiv som möjligt, vilket gör
-              att den bara behöver laddas en gång och är snabb och smidig för
-              besökarna.
+              React när vi kodar hemsidan, ett system som gör hemsidan extremt
+              snabb och smidig för besökarna.
             </p>
           </StepCard>
           <StepCard step={3} title="Publicering (1-2 dagar)" animate>
@@ -100,7 +99,7 @@ export default function Website() {
         <p>
           Vi förstår att många kunder vill ha möjligheten att själva hantera och
           uppdatera sin hemsida efter lansering.{" "}
-          <span>Hos oss är det du som väljer</span> ilket Content Management
+          <span>Hos oss är det du som väljer</span> vilket Content Management
           Systems (CMS) du vill att vi ska använda.
         </p>
         <p>
@@ -182,7 +181,7 @@ export default function Website() {
         </Button>
       </Card>
       <StickyCallToAction
-        title="Beställ med fast pris"
+        title="Räkna ut ditt pris"
         onClick={() => console.log("Clicked")}
         icon={ArrowRightMinor}
       />
