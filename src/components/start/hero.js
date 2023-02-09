@@ -12,7 +12,7 @@ const Hero = () => {
     >
       <div className="container mx-auto py-28 md:py-44 px-8 space-y-6 justify-center max-w-screen-sm ">
         <h1 className="text-white font-bold text-center">
-          Bry dig inte om timpriser - Välj Unikkod's <span>fasta priser</span>
+          Slipp timpriser - Välj Unikkod's <span>fasta priser</span>
         </h1>
         <p className="text-white mt-4 text-center">
           Bred erfarenhet och personlig service till ett fast pris. Vårt

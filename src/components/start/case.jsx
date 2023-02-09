@@ -27,33 +27,17 @@ function SubHeadline() {
 }
 
 function ScreenshotCard({ screenshot, alt }) {
+  const paragraphs = [
+    "På Unikkod är vi stolta över våra framgångsrika projekt och kundfall. En av våra mest imponerande kunder är Comfornette, som vi hade glädjen att samarbeta med för att ta deras online-närvaro till nästa nivå.",
+    "Vi arbetade nära tillsammans med Comfornette för att skapa en komplett e-handelslösning som möter deras specifika behov och målgrupp. Vi såg till att designa en hemsida som reflekterar deras varumärke på ett professionellt sätt och samtidigt tillgodoser kundens användarvänlighet.",
+    "Men det var inte bara designen som vi tog hand om. Vi också utvecklade avancerade lösningar som gjorde det möjligt för Comfornette att effektivt hantera sin butik på nätet. Resultatet var en livaktig e-handelsplattform som gav Comfornette en konkurrenskraftig fördel på nätet.",
+    "Med detta projekt är vi stolta över att ha bidragit till Comfornettes framgång på nätet och över de fantastiska resultat som vi har uppnått tillsammans.",
+  ]
+
   return (
     <div className="flex flex-col-reverse md:flex-row gap-10 h-fit md:h-[620px]">
       <div className="space-y-4 md:w-1/2 md:pr-10">
-        <p>
-          På Unikkod är vi stolta över våra framgångsrika projekt och kundfall.
-          En av våra mest imponerande kunder är Comfornette, som vi hade glädjen
-          att samarbeta med för att ta deras online-närvaro till nästa nivå.
-        </p>
-        <p>
-          Vi arbetade nära tillsammans med Comfornette för att skapa en komplett
-          e-handelslösning som möter deras specifika behov och målgrupp. Vi såg
-          till att designa en hemsida som reflekterar deras varumärke på ett
-          professionellt sätt och samtidigt tillgodoser kundens
-          användarvänlighet.
-        </p>
-        <p>
-          Men det var inte bara designen som vi tog hand om. Vi också utvecklade
-          avancerade lösningar som gjorde det möjligt för Comfornette att
-          effektivt hantera sin butik på nätet. Resultatet var en livaktig
-          e-handelsplattform som gav Comfornette en konkurrenskraftig fördel på
-          nätet.
-        </p>
-        <p>
-          Med detta projekt är vi stolta över att ha bidragit till Comfornettes
-          framgång på nätet och över de fantastiska resultaten vi har uppnått
-          tillsammans.
-        </p>
+        <TruncateParagraphs paragraphs={paragraphs} />
         <Button to="/case/comfornette" type="secondary" icon={Icon}>
           Läs mer om case
         </Button>
@@ -66,5 +50,30 @@ function ScreenshotCard({ screenshot, alt }) {
         />
       </div>
     </div>
+  )
+}
+
+function TruncateParagraphs({ paragraphs = null }) {
+  const [isReadMore, setIsReadMore] = React.useState(false)
+
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore)
+  }
+
+  const paragraphMarkup = paragraphs.map((paragraph, index) => {
+    if (index < 2 || isReadMore) {
+      return <p key={index}>{paragraph}</p>
+    } else {
+      return null
+    }
+  })
+
+  return (
+    <>
+      {paragraphMarkup}
+      <Button onClick={toggleReadMore} type="plain">
+        {!isReadMore ? "Visa mer" : ""}
+      </Button>
+    </>
   )
 }

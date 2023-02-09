@@ -83,7 +83,7 @@
   }
 
   button {
-    @apply cursor-pointer w-fit rounded px-5 py-2 flex;
+    @apply cursor-pointer w-fit rounded px-5 py-2 flex font-sora;
     &.primary {
       @apply bg-primary text-white;
     }
