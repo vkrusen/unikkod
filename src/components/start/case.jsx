@@ -48,7 +48,7 @@ function ScreenshotCard({ screenshot, alt }) {
           tillsammans.
         </p>
         <Button to="/case/comfornette" type="secondary" icon={Icon}>
-          Läs mer
+          Läs mer om case
         </Button>
       </div>
       <div className="w-full md:w-1/2 static md:absolute md:right-0">

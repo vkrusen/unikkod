@@ -12,19 +12,19 @@ const Navigation = () => {
     <nav>
       {/* Desktop navigation */}
       <div className="navbar__desktop">
-        <div className="left">
+        <div className="left w-20">
           <Link to="/">Logo</Link>
         </div>
         <ul>
           {navbar.map((link, index) => (
             <li key={index}>
-              <Link to={`/${link.url}`} activeClassName="text-primary">
+              <Link to={`/${link.url}`} className="link">
                 {link.title}
               </Link>
             </li>
           ))}
         </ul>
-        <div className="right"></div>
+        <div className="right w-20"></div>
       </div>
 
       {/* Mobile navigation */}
