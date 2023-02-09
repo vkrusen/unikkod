@@ -43,6 +43,13 @@ function ScreenshotCard({ screenshot, alt }) {
           användarvänlighet.
         </p>
         <p>
+          Men det var inte bara designen som vi tog hand om. Vi också utvecklade
+          avancerade lösningar som gjorde det möjligt för Comfornette att
+          effektivt hantera sin butik på nätet. Resultatet var en livaktig
+          e-handelsplattform som gav Comfornette en konkurrenskraftig fördel på
+          nätet.
+        </p>
+        <p>
           Med detta projekt är vi stolta över att ha bidragit till Comfornettes
           framgång på nätet och över de fantastiska resultaten vi har uppnått
           tillsammans.
