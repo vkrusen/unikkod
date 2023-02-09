@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         sora: ["Sora", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       fontWeight: {
         light: 300,

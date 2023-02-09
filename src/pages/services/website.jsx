@@ -143,8 +143,7 @@ export default function Website() {
       </Card>
       <Card>
         <h3>
-          Kan ni hjälpa mig med integrationer med andra plattformar jag
-          använder?
+          Kan ni hjälpa mig med integrationer?
         </h3>
         <p>
           Vi har erfarenhet av att integrera olika plattformar och tjänster med

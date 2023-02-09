@@ -4,19 +4,19 @@
 
 @layer components {
   h1 {
-    @apply text-4xl font-bold leading-normal;
+    @apply text-4xl font-bold leading-normal font-sora;
   }
   h2 {
-    @apply text-2xl font-bold leading-normal;
+    @apply text-2xl font-bold leading-normal font-sora;
   }
   h3 {
-    @apply text-xl font-bold leading-normal;
+    @apply text-xl font-bold leading-normal font-sora;
   }
   h4 {
-    @apply text-lg font-bold leading-normal;
+    @apply text-lg font-bold leading-normal font-sora;
   }
   p {
-    @apply text-base leading-normal;
+    @apply text-base leading-normal font-poppins;
   }
   span {
     @apply text-primary;
@@ -107,12 +107,5 @@
 
   .sticky-call-to-action {
     @apply flex items-center fixed bottom-0 left-0 w-full h-14 justify-center bg-secondary text-white z-40;
-  }
-}
-
-html {
-  body {
-    font-family: "Sora";
-    line-height: 1.75;
   }
 }
