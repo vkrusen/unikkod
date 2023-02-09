@@ -14,7 +14,7 @@ export function Page({ image, themeColor = "#004356", children }) {
       <meta name="theme-color" content={themeColor} />
       <Navigation />
       <main>
-        {image && <img src={image} className="h-[220px] md:h-[540px] w-full object-cover" /> || <NavigationHero />}
+        {image ? <img src={image} className="h-[220px] md:h-[540px] w-full object-cover" alt="hero" /> : <NavigationHero />}
         <Container>{children}</Container>
       </main>
       <footer>
@@ -87,8 +87,8 @@ export function Icon({ path }) {
 
 // Divider component
 export function Divider({ position = "left" }) {
-  console.log(position == "center" ? " mx-auto" : "")
-  return <hr className={"divider" + (position == "center" ? " mx-auto" : "") } />
+  console.log(position === "center" ? " mx-auto" : "")
+  return <hr className={"divider" + (position === "center" ? " mx-auto" : "") } />
 }
 
 // Button component

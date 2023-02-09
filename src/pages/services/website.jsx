@@ -11,6 +11,7 @@ import {
 
 import ArrowRightMinor from "../../images/icons/ArrowRightMinor.svg"
 import CoWorking from "../../images/CoWorking.jpg"
+import CMS from "../../modules/cms"
 
 export default function Website() {
   return (
@@ -117,6 +118,11 @@ export default function Website() {
           hantera din hemsida eller en mer avancerad lösning med större
           möjligheter, har vi det du behöver.
         </p>
+        <div className="grid grid-flow-row gap-2 grid-cols-2 md:grid-cols-5">
+          {CMS.map(cms => (
+            <LogoCard key={cms.title} title={cms.title} image={cms.image} />
+          ))}
+        </div>
       </Card>
       <Card>
         <h3>Vad kostar det?</h3>
@@ -199,9 +205,21 @@ function StepCard({ step, title, current = false, animate = false, children }) {
         >
           Steg {step}
         </h4>
-        <p className={`mb-4 mt-2 ${animate ? "animate-pulse" : null}`}>{title}</p>
-        <p>{children}</p>
+        <p className={`mb-4 mt-2 ${animate ? "animate-pulse" : null}`}>
+          {title}
+        </p>
+        {children}
       </div>
+    </div>
+  )
+}
+
+function LogoCard({ title, image, children }) {
+  return (
+    <div className="flex flex-row items-center gap-2 p-2 border-2 border-solid border-gray-100 rounded-lg">
+      <img src={image} alt={title} className="w-10" />
+      <p className="text-xs text-left">{title}</p>
+      {children}
     </div>
   )
 }

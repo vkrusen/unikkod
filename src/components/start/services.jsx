@@ -34,8 +34,4 @@ export default function Services() {
       </div>
     </div>
   )
-
-  function navigateTo(to) {
-    window.location.href = to
-  }
 }
