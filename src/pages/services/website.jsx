@@ -34,9 +34,9 @@ export default function Website() {
         </p>
       </Card>
       <Card>
-        <h2>Hur är upplägget?</h2>
+        <h2>Hur fungerar det?</h2>
         <p>
-          Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-4
+          Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-3
           veckor från första steget tills att hemsidan är klar.
         </p>
         <p>
@@ -54,14 +54,14 @@ export default function Website() {
       </Card>
       <Card>
         <div className="grid md:grid-cols-3 gap-8">
-          <StepCard step={1} title="Design" current>
+          <StepCard step={1} title="Design (1 vecka)" current>
             <p>
               Vårt team använder de senaste verktygen och teknikerna, inklusive
               React, för att säkerställa att din hemsida är snabb, enkel att
               använda och har den rätta känslan och stilen för ditt företag.
             </p>
           </StepCard>
-          <StepCard step={2} title="Kodning" current>
+          <StepCard step={2} title="Kodning (1 vecka)" current>
             <p>
               När designen är klar sätter vi igång med kodningen. Vi använder
               React för att göra hemsidan så effektiv som möjligt, vilket gör
@@ -69,7 +69,7 @@ export default function Website() {
               besökarna.
             </p>
           </StepCard>
-          <StepCard step={3} title="Publicering" animate>
+          <StepCard step={3} title="Publicering (1-2 dagar)" animate>
             <p>
               När kodningen är klar och hemsidan har testats och är redo att gå
               live, ger vi dig information om hur du kan lansera hemsidan. Om du
@@ -99,20 +99,22 @@ export default function Website() {
         <h3>Använder ni WordPress?</h3>
         <p>
           Vi förstår att många kunder vill ha möjligheten att själva hantera och
-          uppdatera sin hemsida efter lansering.
+          uppdatera sin hemsida efter lansering.{" "}
+          <span>Hos oss är det du som väljer</span> ilket Content Management
+          Systems (CMS) du vill att vi ska använda.
         </p>
         <p>
-          Därför erbjuder vi ett brett utbud av Content Management Systems (CMS).
-          Oavsett om du vill ha en lättanvänd plattform för att hantera din
-          hemsida eller en mer avancerad lösning med större möjligheter, har vi
-          det du behöver.
+          Vi erbjuder ett brett utbud. Oavsett om du vill ha en lättanvänd
+          plattform för att hantera din hemsida eller en mer avancerad lösning
+          med större möjligheter, har vi det du behöver.
         </p>
         <p>
-          Låt säga att du väljer WordPress. Då gör vi så du smidigt kan uppdatera
-          innehållet på din hemsida, inklusive text, bilder och filer, så att
-          din hemsida alltid är uppdaterad och relevant. Vårt mål är att ge dig
-          full kontroll över din hemsida, så att du inte är beroende av oss
-          eller någon annan för att göra ändringar.
+          Låt säga att du väljer WordPress. Då gör vi så du smidigt kan
+          uppdatera innehållet på din hemsida, inklusive text, bilder och filer,
+          så att din hemsida alltid är uppdaterad och relevant - direkt i
+          WordPress. Vårt mål är att ge dig full kontroll över din hemsida, så
+          att du inte är beroende av oss eller någon annan för att göra
+          ändringar.
         </p>
         <div className="grid grid-flow-row gap-2 grid-cols-2 md:grid-cols-5">
           {CMS.map(cms => (
@@ -131,12 +133,12 @@ export default function Website() {
         <p>
           När det gäller priser för våra webbutvecklingstjänster så har vi en
           prislista som vi arbetar efter. Generellt sett ligger priset för en
-          hemsida mellan 5000-10 000 kr. Men vi erbjuder också möjligheten att
-          få ett fast pris direkt när du lägger en beställning på vår hemsida.
-          Det är viktigt för oss att alltid vara öppna och transparenta med våra
-          kunder när det gäller priser, så du vet precis vad du får för
-          pengarna. Vi vill också poängtera att du alltid får en högkvalitativ
-          hemsida från oss, oavsett pris.
+          hemsida mellan <span>5000-10 000 kr.</span> Men vi erbjuder också
+          möjligheten att få ett <span> fast pris </span> direkt när du lägger
+          en beställning på vår hemsida. Det är viktigt för oss att alltid vara
+          öppna och transparenta med våra kunder när det gäller priser, så du
+          vet precis vad du får för pengarna. Vi vill också poängtera att du
+          alltid får en högkvalitativ hemsida från oss, oavsett pris.
         </p>
       </Card>
       <Card>
