@@ -7,7 +7,7 @@
     @apply text-4xl font-bold leading-normal font-sora;
   }
   h2 {
-    @apply text-2xl font-bold leading-normal font-sora;
+    @apply text-3xl font-bold leading-normal font-sora;
   }
   h3 {
     @apply text-xl font-bold leading-normal font-sora;
@@ -16,7 +16,7 @@
     @apply text-lg font-bold leading-normal font-sora;
   }
   p {
-    @apply text-base leading-normal font-poppins;
+    @apply text-base leading-normal font-poppins text-gray-900;
   }
   span {
     @apply text-primary;

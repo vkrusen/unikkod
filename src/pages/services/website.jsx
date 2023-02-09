@@ -36,8 +36,8 @@ export default function Website() {
       <Card>
         <h2>Hur fungerar det?</h2>
         <p>
-          Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-3
-          veckor från första steget tills att hemsidan är klar.
+          Vi delar upp processen i <span>tre enkla steg.</span> Det tar totalt
+          mellan 2-3 veckor från första steget tills att hemsidan är klar.
         </p>
         <p>
           Innan vi sätter igång behöver vi veta mer om ditt företag. Om du
@@ -142,9 +142,7 @@ export default function Website() {
         </p>
       </Card>
       <Card>
-        <h3>
-          Kan ni hjälpa mig med integrationer?
-        </h3>
+        <h3>Kan ni hjälpa mig med integrationer?</h3>
         <p>
           Vi har erfarenhet av att integrera olika plattformar och tjänster med
           våra hemsidor. Vi hjälper dig att ansluta andra tjänster, som
