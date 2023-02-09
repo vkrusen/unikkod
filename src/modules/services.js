@@ -1,6 +1,8 @@
 import CoWorking from "../images/CoWorking.jpg"
 import Ecommerce from "../images/Ecommerce.jpg"
 import Integration from "../images/Building.jpg"
+import SEO from "../images/SEO.jpg"
+import Consulting from "../images/Consulting.jpg"
 
 const services = [
   {
@@ -28,21 +30,21 @@ const services = [
     title: "Shopify-appar",
     description: "Skräddarsydda Shopify-appar för att förbättra din webbutik.",
     handle: "services/shopify-apps",
-    image: null,
+    image: Ecommerce,
   },
   {
     title: "Konsultation",
     description:
       "Rådgivning och strategier för att hjälpa dig nå dina mål för din webbutik.",
     handle: "services/consultation",
-    image: null,
+    image: Consulting,
   },
   {
     title: "SEO",
     description:
       "Optimerar din hemsida för att förbättra din synlighet i sökmotorer.",
     handle: "services/seo",
-    image: null,
+    image: SEO,
   },
 ]
 
