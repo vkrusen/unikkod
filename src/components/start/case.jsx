@@ -33,7 +33,7 @@ function ScreenshotCard({ screenshot, alt }) {
       </div>
       <div className="w-full md:w-2/3 static md:absolute md:right-0">
         <img
-          className="border-2 border-gray-100 rounded-lg md:rounded-r-none md:border-r-0 md:object-left object-contain md:object-cover h-fit md:h-[580px] md:ml-auto"
+          className="border-2 border-gray-100 rounded-lg md:rounded-r-none md:border-r-0 md:object-left object-contain md:object-cover h-auto md:h-[580px] md:ml-auto"
           src={screenshot}
           alt={alt}
         />
