@@ -34,7 +34,7 @@ export default function Website() {
         </p>
       </Card>
       <Card>
-        <h3>Hur är upplägget?</h3>
+        <h2>Hur är upplägget?</h2>
         <p>
           Vi delar upp processen i tre enkla steg. Det tar totalt mellan 2-4
           veckor från första steget tills att hemsidan är klar.
@@ -102,18 +102,17 @@ export default function Website() {
           uppdatera sin hemsida efter lansering.
         </p>
         <p>
-          Därför har vi erfarenhet av och utbildning i att utveckla hemsidor i
-          WordPress. Vi kan lägga till en WordPress-administratör så att du
-          enkelt kan uppdatera innehållet på din hemsida, inklusive text, bilder
-          och filer, så att din hemsida alltid är uppdaterad och relevant. Vårt
-          mål är att ge dig full kontroll över din hemsida, så att du inte är
-          beroende av oss eller någon annan för att göra ändringar.
-        </p>
-        <p>
-          Vi erbjuder ett brett utbud av Content Management Systems (CMS).
+          Därför erbjuder vi ett brett utbud av Content Management Systems (CMS).
           Oavsett om du vill ha en lättanvänd plattform för att hantera din
           hemsida eller en mer avancerad lösning med större möjligheter, har vi
           det du behöver.
+        </p>
+        <p>
+          Låt säga att du väljer WordPress. Då gör vi så du smidigt kan uppdatera
+          innehållet på din hemsida, inklusive text, bilder och filer, så att
+          din hemsida alltid är uppdaterad och relevant. Vårt mål är att ge dig
+          full kontroll över din hemsida, så att du inte är beroende av oss
+          eller någon annan för att göra ändringar.
         </p>
         <div className="grid grid-flow-row gap-2 grid-cols-2 md:grid-cols-5">
           {CMS.map(cms => (
