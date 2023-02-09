@@ -4,6 +4,7 @@ import { Button, Divider } from "../unikkod-components"
 
 import Comfornette from "../../images/Comfornette.jpg"
 import Icon from "../../images/icons/ArrowRightMinor.svg"
+import Dropdown from "../../images/icons/DropdownMinor.svg"
 
 export default function Case() {
   return (
@@ -71,7 +72,7 @@ function TruncateParagraphs({ paragraphs = null }) {
   return (
     <>
       {paragraphMarkup}
-      <Button onClick={toggleReadMore} type="plain">
+      <Button onClick={toggleReadMore} type="plain" icon={!isReadMore ? Dropdown : null}>
         {!isReadMore ? "Visa mer" : ""}
       </Button>
     </>

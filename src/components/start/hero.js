@@ -16,8 +16,7 @@ const Hero = () => {
         </h1>
         <p className="text-white mt-4 text-center">
           Bred erfarenhet och personlig service till ett fast pris. Vårt
-          svenska team kodar och designar allt inhouse för en unik och anpassad
-          hemsida.
+          svenska team kodar och designar allt från grunden.
         </p>
         <div className="text-white flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
           <Button type="primary" icon={ArrowRightMinor}>
