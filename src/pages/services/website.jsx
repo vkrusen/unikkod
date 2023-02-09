@@ -107,22 +107,25 @@ export default function Website() {
           enkelt kan uppdatera innehållet på din hemsida, inklusive text, bilder
           och filer, så att din hemsida alltid är uppdaterad och relevant. Vårt
           mål är att ge dig full kontroll över din hemsida, så att du inte är
-          beroende av oss eller någon annan för att göra ändringar. Vi stöder
-          också dig efter lanseringen för att säkerställa att du har all den
-          hjälp du behöver för att hantera din hemsida i WordPress.
+          beroende av oss eller någon annan för att göra ändringar.
         </p>
         <p>
           Vi erbjuder ett brett utbud av Content Management Systems (CMS).
-          Utöver WordPress erbjuder vi även bland annat Strapi, GraphCMS och
-          Contentful. Oavsett om du vill ha en lättanvänd plattform för att
-          hantera din hemsida eller en mer avancerad lösning med större
-          möjligheter, har vi det du behöver.
+          Oavsett om du vill ha en lättanvänd plattform för att hantera din
+          hemsida eller en mer avancerad lösning med större möjligheter, har vi
+          det du behöver.
         </p>
         <div className="grid grid-flow-row gap-2 grid-cols-2 md:grid-cols-5">
           {CMS.map(cms => (
-            <LogoCard key={cms.title} title={cms.title} image={cms.image} popular={cms.popular} />
+            <LogoCard
+              key={cms.title}
+              title={cms.title}
+              image={cms.image}
+              popular={cms.popular}
+            />
           ))}
         </div>
+        <Divider position="center" />
       </Card>
       <Card>
         <h3>Vad kostar det?</h3>
