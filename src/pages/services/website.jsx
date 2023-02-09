@@ -60,7 +60,7 @@ export default function Website() {
               använda och har den rätta känslan och stilen för ditt företag.
             </p>
           </StepCard>
-          <StepCard step={2} title="Kodning" current>
+          <StepCard step={2} title="Kodning" animate>
             <p>
               När designen är klar sätter vi igång med kodningen. Vi använder
               React för att göra hemsidan så effektiv som möjligt, vilket gör
@@ -68,7 +68,7 @@ export default function Website() {
               besökarna.
             </p>
           </StepCard>
-          <StepCard step={3} title="Publicering" animate>
+          <StepCard step={3} title="Publicering">
             <p>
               När kodningen är klar och hemsidan har testats och är redo att gå
               live, ger vi dig information om hur du kan lansera hemsidan. Om du
@@ -92,7 +92,7 @@ export default function Website() {
           mellan 5000-10 000 kr. Vi ser fram emot att hjälpa dig att skapa den
           perfekta hemsidan för ditt företag!
         </p>
-        <Divider position="center"/>
+        <Divider position="center" />
       </Card>
       <Card>
         <h3>Använder ni WordPress?</h3>
@@ -199,9 +199,9 @@ function StepCard({ step, title, current = false, animate = false, children }) {
         >
           Steg {step}
         </h4>
-        <p>{title}</p>
+        <p className={`mb-4 mt-2 ${animate ? "animate-pulse" : null}`}>{title}</p>
+        <p>{children}</p>
       </div>
-      {children}
     </div>
   )
 }
